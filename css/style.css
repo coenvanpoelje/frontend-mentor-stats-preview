@@ -11,8 +11,7 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
   background-color: var(--background);
-  height: 100%;
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -49,6 +48,7 @@ p {
     "content";
   text-align: center;
   width: 100%;
+  margin: 0;
   max-width: 1440px;
   border-radius: 10px;
   background-color: var(--primary);
@@ -85,11 +85,11 @@ p {
 }
 
 /* Media queries */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   .card {
     display: grid;
     text-align: left;
-
+    margin: 10%;
     grid-template-columns: 50% 50%;
     grid-template-areas: "content image";
     border-radius: 10px;
